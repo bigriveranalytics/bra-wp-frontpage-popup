@@ -1,0 +1,129 @@
+#fpp-modal {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  background: rgba(114, 125, 152, 0.9);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fpp-modal.closed {
+  display: none;
+}
+
+#fpp-modal .modal-container {
+  max-width: 900px;
+  background: #fdfdff;
+  padding-bottom: 2rem;
+}
+
+#fpp-modal header {
+  position: relative;
+  padding: 1rem 1rem;
+  background-color: #26375f;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+#fpp-modal .logo-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+#fpp-modal .fpp-logo {
+  width: 25px;
+}
+
+#fpp-modal .fpp-protocol {
+  /* display: block; */
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#fpp-modal .fpp-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+}
+
+#fpp-modal p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.fpp-btns {
+  display: block;
+  padding: 0 1rem;
+}
+
+#fpp-modal #fpp-decline,
+#fpp-modal #fpp-accept {
+  width: 100%;
+  color: white;
+  background: #df6d53;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+#fpp-modal button:first-child {
+  margin-bottom: 0.75rem;
+}
+
+#fpp-modal #fpp-decline:hover,
+#fpp-modal #fpp-accept:hover {
+  background: #f37e64;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  #fpp-modal header {
+    margin-bottom: 6.7rem;
+    padding: 1rem 2rem;
+  }
+
+  #fpp-modal .fpp-title,
+  #fpp-modal .fpp-protocol {
+    font-size: 1.375rem;
+  }
+
+  #fpp-modal .modal-container {
+    max-width: 900px;
+    /* padding: 3.125rem 2rem; */
+    padding-bottom: 3.125rem;
+  }
+
+  #fpp-modal p {
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    font-size: 15px;
+  }
+
+  .fpp-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    gap: 3.8rem;
+  }
+
+  #fpp-modal #fpp-accept,
+  #fpp-modal #fpp-decline {
+    width: 50%;
+  }
+
+  #fpp-modal button:first-child {
+    margin-bottom: 0;
+  }
+}
